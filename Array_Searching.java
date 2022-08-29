@@ -26,7 +26,7 @@ public class Array_Searching {
 		for (int i=0;i<ls.length;i++) {
 			if(num==ls[i]) {
 				a=false;
-				System.out.println(num +" it is present");
+				System.out.println(num +" it is presents");
 				break;
 			}
 		}
