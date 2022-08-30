@@ -4,8 +4,17 @@ public class Sorting_Arrays {
 
 	public static void main(String[] args) {
 		Sorting_Arrays obj = new Sorting_Arrays();
-		obj.Sorting_Arrays_Asending();
-		obj.Sorting_Arrays_Desending();
+//		obj.Sorting_Arrays_Asending();
+//		obj.Sorting_Arrays_Desending();
+		obj.Reverse_Printing();
+	}
+
+	private void Reverse_Printing() {
+		int ls[]= {5,6,744,45,3,45,5,42,78};
+		for(int i=ls.length-1;i>=0;i--) {
+			System.out.print(ls[i]+" ");
+		}
+		
 	}
 
 	private void Sorting_Arrays_Desending() {

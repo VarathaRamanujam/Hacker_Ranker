@@ -4,9 +4,20 @@ public class Array_Searching {
 
 	public static void main(String[] args) {
 		Array_Searching obj = new Array_Searching();
-		obj.Array_Searching();
+		//obj.Array_Searching();
+		obj.Bianary_Searching_Array();//to be continue
 	}
 
+	private void Bianary_Searching_Array() {
+		int ls[]= {68,729,24,272,58,3,4,6,4,22,2};
+		
+		
+	}
+
+	
+	
+	
+	
 	private void Array_Searching() {
 		Scanner sc = new Scanner(System.in);
 		System.out.print("Enter the Array length : ");
