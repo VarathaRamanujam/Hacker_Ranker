@@ -8,9 +8,7 @@ public class Currency {
 	        double payment = scanner.nextDouble();
 	        scanner.close();
 	        
-	        
-//	       Math nb = new Math();
-//	       nb.max(42, 8628);
+
 	    NumberFormat us = NumberFormat.getCurrencyInstance(Locale.US);
 	    NumberFormat india = NumberFormat.getCurrencyInstance(new Locale("en", "in"));
 	    NumberFormat china = NumberFormat.getCurrencyInstance(Locale.CHINA);
