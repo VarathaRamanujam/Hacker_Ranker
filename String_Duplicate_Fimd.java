@@ -8,6 +8,7 @@ public class String_Duplicate_Fimd {
 		String_Duplicate_Fimd obj = new String_Duplicate_Fimd();
 		obj.String_Duplicate_Find_Para();
 	}
+
 Scanner sc = new Scanner(System.in);
 	private void String_Duplicate_Find_Para() {
 		String s = sc.nextLine();

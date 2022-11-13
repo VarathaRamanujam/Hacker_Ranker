@@ -8,28 +8,44 @@ public class String_HTML {
 	}
 
 	private void String_h1() {
-		String []s=new String[4];
+		String []s=new String[3];
 		
 		 s[0]="<h1>Nayeem loves counseling</h1>";
-		 s[1]="<h1><h1>Sanjay has no watch</h1></h1><par>So wait for a while</par>";
-		 s[2]="<SA premium>Imtiaz has a secret crush</SA premium>";
+		 s[1]="<h1>Sanjay has no watch</h1>";
+		 s[2]="<Sa premium>Imtiaz has a secret crush</Sa premium>";
 		
-		 
-		 s[0]=(String) s[0].subSequence('<', '>');
-		 
-		 System.out.println(s[0]);
-		 try {
-			for(int i=0;i<s.length;i++) {
-			s[i]=s[i].replaceAll("</h1>", "<h1>");
-			//System.out.println(s.toString());
+		for(int len=0;len<s.length;len++) {
+		String ss="";
+		int count =0;
+		
+		for(int i=0;i<s[len].length();i++) {
+			if(s[len].charAt(i)=='<'  || count ==1) {
+				count =1;
+				ss+=s[len].charAt(i);
 			
-			String []ss=s[i].split("<h1>");
-			for(String s1:ss)
-				System.out.println(s1);
-			 }
-		} catch (Exception e) {
-             System.out.println("None");			
+			if(s[len].charAt(i)=='>') {
+				count =i;
+				break;
+			}	
+			}
 		}
-	}
+		
+		int j=0;
+		String s1="";
+		//System.out.println(ss);
+		for(int i=0;i<=ss.length();i++) {
+			if(i==1)
+				s1+="/";
+			else 
+				s1+=ss.charAt(j++);
+			
+		}
 
+		if(s[len].contains(s1) ) {
+		s[len]=s[len].replaceAll(ss, s1);
+		System.out.println(s[len]=s[len].replaceAll(s1, "").trim());
+		}else 
+			System.out.println("None");
+	}
+	}
 }
