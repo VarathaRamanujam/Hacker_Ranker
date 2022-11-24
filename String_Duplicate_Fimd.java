@@ -22,7 +22,7 @@ Scanner sc = new Scanner(System.in);
 					flag=false;
 			}
 			if(flag ==true)
-				System.out.println(ss[i]);
+				System.out.print(ss[i]+" ");
 		}
 		
 		

@@ -27,7 +27,7 @@ public class Protech_Question_ {
 	    	 }
 	     }	
 	     System.out.println();
-	     if(i<5  ) 
+	     if(i<5 ) 
 	    	 num++;
 	     else
 	    	 num--;

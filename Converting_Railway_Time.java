@@ -9,13 +9,13 @@ public class Converting_Railway_Time {
 
 	 public  String timeConversion(String s) {
 	        
-	        
+	      
 	        String ss[] = s.split(":");
 	        String s1="";
 	        String s2=ss[1];
 	        String s3="";
 	        
-	        int hour = Integer.parseInt(ss[0]);
+	        int hour = Integer.parseInt(ss[0]);// 7
 	        s1=ss[0];
 	        if(hour ==12){
 	            if(ss[2].contains("AM")){
@@ -25,7 +25,7 @@ public class Converting_Railway_Time {
 	        
 	        if(ss[2].contains("PM")){
 	            if(hour==12){
-	                s1=ss[0]+"";
+	                s1=ss[0];
 	            }
 	            else
 	            s1=hour+12+"";
